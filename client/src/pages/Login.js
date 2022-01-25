@@ -21,18 +21,18 @@ export default function Login() {
         <div className="signInContainer">
         <Navbar collapseOnSelect expand="lg" bg="dark">
             <Container>
-            <Navbar.Brand href="#home">
+            <Navbar.Brand href="/">
                 LiftRite
             </Navbar.Brand>
             <Nav>
-                <Nav.Link href="#Signup">Signup!</Nav.Link>
+                <Nav.Link href="/signup">Signup!</Nav.Link>
                 <Nav.Link eventKey={2} href="#Login">
                     Login
                 </Nav.Link>
             </Nav>
             </Container>
         </Navbar>
-        
+       {/* end navbar  */}
             <h1 className="projectTitle"> LiftRite </h1>
             <div className="Login">
                 <Form onSubmit={handleSubmit}>
