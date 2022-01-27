@@ -4,10 +4,10 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 
 // importing pages 
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
-import Home from "./pages/Home";
-import {User} from "./pages/User";
+import Login from "./pages/Login.js";
+import Signup from "./pages/Signup.js";
+import Home from "./pages/Home.js";
+import {User} from "./pages/User.js";
 
 const client = new ApolloClient({
   uri: "/graphql",
@@ -28,10 +28,10 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <Switch>
-        <div className="container">
-        {/* <Route exact path="/">
-            <Home />
-          </Route> */}
+        <div className="container"> 
+          <Route exact path="/">
+            <Home /> 
+          </Route> 
           <Route exact path="/login">
             <Login handleUserLogin={handleUserLogin}  />
           </Route>

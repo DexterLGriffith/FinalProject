@@ -33,7 +33,7 @@ export default function Signup() {
             <div className="Login">
                 <Form onSubmit={handleSubmit}>
                 <Form.Group size="lg" controlId="Username">
-                        <Form.Label>Password</Form.Label>
+                        <Form.Label>Username</Form.Label>
                         <Form.Control
                             type="text"
                             value={username}
