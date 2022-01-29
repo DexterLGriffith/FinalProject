@@ -16,7 +16,6 @@ const client = new ApolloClient({
 
 // const [password, setPassword] = useState("");
 
-
 function App() {
   const [email, setEmail] = useState("");
   
