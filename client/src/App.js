@@ -1,6 +1,6 @@
 import React from "react";
 import {ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch,Link } from "react-router-dom";
 
 
 // importing pages 
@@ -13,14 +13,20 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
+function homeClickHandler(event){
+event.preventDefault();
+this.props.history.push('/login');
+<Link to ={'/login'}/>
+}
+
 function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-        <switch>
+        <Switch>
         <div className="container">
         <Route exact path="/">
-            <Home />
+            <Home onClick ={homeClickHandler} />
           </Route>
           <Route exact path="/login">
             <Login />
@@ -32,7 +38,7 @@ function App() {
           {/* <>
        <Login />;
     </> */}
-      </switch>
+      </Switch>
     </Router>
     </ApolloProvider>
   );

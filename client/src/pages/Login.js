@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { Navbar, Nav, Container } from 'react-bootstrap';
-
+import "./login.css"
 
 export default function Login() {
 
@@ -33,6 +33,7 @@ export default function Login() {
             </Container>
         </Navbar>
        {/* end navbar  */}
+            <div className= "titleLoginContainer">
             <h1 className="projectTitle"> LiftRite </h1>
             <div className="Login">
                 <Form onSubmit={handleSubmit}>
@@ -53,7 +54,8 @@ export default function Login() {
                         />
                     </Form.Group>
                     <Button block size="lg" type="submit" disabled={!validationForm()}>Login!</Button>
-                </Form>    
+                </Form> 
+                </div>   
             </div>    
         </div>
 
