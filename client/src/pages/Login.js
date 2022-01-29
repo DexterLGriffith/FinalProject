@@ -22,10 +22,10 @@ export default function Login(props) {
         <div className="signInContainer">
         <Navbar collapseOnSelect expand="lg" bg="dark">
             <Container>
+            <Nav>
             <Navbar.Brand href="/">
                 LiftRite
             </Navbar.Brand>
-            <Nav>
                 <Nav.Link href="/signup">Signup!</Nav.Link>
             </Nav>
             </Container>
