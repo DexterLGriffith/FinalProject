@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import "./login.css"
 
-export default function Login() {
+export default function Login(props) {
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -15,6 +15,7 @@ export default function Login() {
     }
     function handleSubmit(event) { 
         event.preventDefault();
+         props.handleUserLogin(event)
     }
 
     return (
@@ -26,9 +27,6 @@ export default function Login() {
             </Navbar.Brand>
             <Nav>
                 <Nav.Link href="/signup">Signup!</Nav.Link>
-                <Nav.Link eventKey={2} href="#Login">
-                    Login
-                </Nav.Link>
             </Nav>
             </Container>
         </Navbar>
@@ -53,12 +51,11 @@ export default function Login() {
                             onChange={(e) => setPassword(e.target.value)}
                         />
                     </Form.Group>
-                    <Button block size="lg" type="submit" disabled={!validationForm()}>Login!</Button>
-                </Form> 
-                </div>   
+                    <Button block size="lg" action="/user" type="submit" disabled={!validationForm()}>Login!</Button>
+                </Form>    
             </div>    
         </div>
-
+        
 
     );
 
