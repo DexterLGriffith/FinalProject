@@ -40,7 +40,7 @@ function App() {
           <Route exact path="/user">
             <User userEmail = {email} /> 
           </Route>
-          <Route exact path="/user/upperbody">
+          <Route exact path="/upperbody">
           </Route>
         </div>
           {/* <>
