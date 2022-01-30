@@ -38,8 +38,9 @@ function App() {
             <Signup />
           </Route>
           <Route exact path="/user">
-            <User userEmail = {email} />
-           
+            <User userEmail = {email} /> 
+          </Route>
+          <Route exact path="/user/upperbody">
           </Route>
         </div>
           {/* <>
