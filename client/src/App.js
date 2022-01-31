@@ -8,6 +8,7 @@ import Login from "./pages/Login.js";
 import Signup from "./pages/Signup.js";
 import Home from "./pages/Home.js";
 import {User} from "./pages/User.js";
+import Upperbody from "./pages/Upperbody.js";
 
 const client = new ApolloClient({
   uri: "/graphql",
@@ -41,6 +42,7 @@ function App() {
             <User userEmail = {email} /> 
           </Route>
           <Route exact path="/upperbody">
+            <Upperbody />
           </Route>
         </div>
           {/* <>

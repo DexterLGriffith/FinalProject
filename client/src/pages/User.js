@@ -29,13 +29,13 @@ export function User(props) {
         <h1 className="welcomeUser"> Hello,{props.userEmail} <br />
         What area are you wanting to workout today?</h1>
             <div className="userChoiceContainer">
-            <div className="rowContainer">
+            <div className="rowContainer1">
                 <Row>
                     <Col sm={1} md={2}>
                     <Card style={{ width: '18rem' }}>
                         <Card.Img variant="upperBody1"  style={{height: "150px",}} src= {upperBody1} />
                         <Card.Body>
-                        <a href="/upperbody" target="/upperbody">
+                        <a href="/upperbody" target="_blank" >
                             <Button> upper Body </Button>
                         </a>
                         </Card.Body>

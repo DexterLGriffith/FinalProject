@@ -1,0 +1,12 @@
+.rowContainer {
+    display: flex;  
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 25px;
+}
+.selectGrouph1 {
+    display: flex;  
+    justify-content: center;
+    padding-top: 120px;
+}
