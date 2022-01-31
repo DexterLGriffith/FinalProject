@@ -46,7 +46,9 @@ export default function Login(props) {
                             onChange={(e) => setPassword(e.target.value)}
                         />
                     </Form.Group>
-                    <Button block size="lg" href ="/user" type="submit" disabled={!validationForm()}>Login!</Button>
+                    <a href="/user" target="_blank">
+                            <Button> Login! </Button>
+                        </a>
                 </Form>    
             </div>    
         </div>
