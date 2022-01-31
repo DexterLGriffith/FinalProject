@@ -13,11 +13,11 @@
 }
 .navbar-nav { 
 	display: flex;
-	justify-content: right;
+	justify-content: left;
 	margin-left: 1000px;
-	display: inline;
-	border-left:1px solid #3c3c3c;
-	border-right:1px solid #3c3c3c;
+	/* display: inline; */
+	/* border-left:1px solid #3c3c3c; */
+	/* border-right:1px solid #3c3c3c; */
 }
 form {
 	border: 3px solid black;
@@ -35,4 +35,17 @@ form {
 }
 #Password.form-control {
 	float: center;
+}
+button {
+	margin-left: 100px;
+}
+.navbar-brand {
+	margin-right: 1000px;
+	border-left:1px solid #3c3c3c;
+	border-right:1px solid #3c3c3c;
+}
+.nav-link {
+	margin-right: 1000px;
+	border-right:1px solid #3c3c3c;
+	border-left:1px solid #3c3c3c;
 }
