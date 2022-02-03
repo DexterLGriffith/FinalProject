@@ -12,7 +12,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/peaceful-bastion", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/liftrite", {
   useNewUrlParser: true,
   useFindAndModify: false
 });
