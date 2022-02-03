@@ -35,4 +35,5 @@ Prince Ndebele
 ## Libraries and frameworks 
 
 [Logo Design: Canva](https://www.canva.com/)
+
 [React-Bootstrap: Components, buttons and navbar](https://react-bootstrap.github.io/components/buttons/)
